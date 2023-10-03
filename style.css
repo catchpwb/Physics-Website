@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header, .title {
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(90, 41, 41);
+
+}
+
+.title {
+    padding: 32px;
+    font-size: xx-large;
+        /* Draws outline over text */
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke: 1px white;
+}
+
+.footer {
+    background-color: #eee;
+    /* since footer is a child element of body, and body is a flex element, setting top margin to auto places footer at bottom of page */
+    margin-top: auto;
+}
